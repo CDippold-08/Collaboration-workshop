@@ -1,10 +1,20 @@
-[build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
-
 [project]
 name = "pretty-printer"
 version = "0.1.0"
+description = "A tool to print pretty boxes"
+readme = "README.md"
+requires-python = ">=3.13"
+license = "MIT"
+authors = [
+  { name = "Elliott Lewandowski", email = "erlewandowski@alaska.edu" },
+  { name = "Jenae Matson", email = "jlmatson@alaska.edu" }
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=9.0.3",
+  "ruff>=0.15.14",
+]
 
 [tool.pytest.ini_options]
 pythonpath = ["src"]
