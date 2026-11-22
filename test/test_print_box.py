@@ -81,4 +81,3 @@ def test_15_12(capsys):
     stdout = capsys.readouterr()
 
     assert stdout.out == expected_15_12
-

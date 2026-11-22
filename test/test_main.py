@@ -20,4 +20,3 @@ def test_one_input_late_exit(monkeypatch, capsys):
     stdout = capsys.readouterr()
 
     assert stdout.out == expected_3_3
-

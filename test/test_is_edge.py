@@ -85,4 +85,3 @@ def test_large_cube_1_2():
 def test_large_cube_11_17():
     val = is_edge(11, 17, large_cube_dims)
     assert not val
-
