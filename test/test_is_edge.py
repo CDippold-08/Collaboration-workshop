@@ -1,4 +1,12 @@
+import inspect
 from main import is_edge
+
+
+def test_docstring():
+    doc = inspect.getdoc(is_edge)
+    assert doc is not None
+    assert len(doc.strip()) > 0
+
 
 ################
 #  Small Cube  #
@@ -77,3 +85,4 @@ def test_large_cube_1_2():
 def test_large_cube_11_17():
     val = is_edge(11, 17, large_cube_dims)
     assert not val
+

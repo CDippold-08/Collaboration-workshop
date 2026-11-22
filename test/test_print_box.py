@@ -1,4 +1,9 @@
+import inspect
 from main import print_box
+
+#############
+#  Globals  #
+#############
 
 expected_2_2 = "**\n**\n"
 
@@ -24,6 +29,16 @@ expected_15_12 = (
     "*             *\n"
     "***************\n"
 )
+
+################
+#  Test Cases  #
+################
+
+
+def test_docstring():
+    doc = inspect.getdoc(print_box)
+    assert doc is not None
+    assert len(doc) > 0
 
 
 def test_2_2(capsys):
@@ -66,3 +81,4 @@ def test_15_12(capsys):
     stdout = capsys.readouterr()
 
     assert stdout.out == expected_15_12
+
