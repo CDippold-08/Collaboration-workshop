@@ -10,7 +10,7 @@ To complete this workshop you will need to create a duplicate of this repo.
 1. Create an empty repository on GitHub
 2. Mirror this repo into your newly create one
 ```bash
-git clone --mirror github.com/erlewa/git-collaboration-workshop 
+git clone --mirror https://github.com/erlewa/git-collaboration-workshop 
 cd git-collaboration-workshop.git
 git push --mirror <your-repo-link>
 ```
