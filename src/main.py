@@ -41,6 +41,10 @@ def display_box_with_dimensions(width, height):
     print(out, end="")
 
 
+# TODO: is_edge_function: check if point is on box edge
+# TODO: print_box function: print box with given dimensions
+
+# main: take user input for dimensions of box to print
 def main():
     while True:
         try:
